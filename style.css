@@ -5,19 +5,8 @@
   box-sizing: border-box;
 }
 
-html, body {
-  
-  overflow-x: hidden; 
-  width: 100%;
-  max-width: 1200px; 
-  margin: 0 auto;    
-  padding: 0 20px;  
-}
 
-img, video {
-  max-width: 100%;
-  height: auto;
-}
+
     
    
         .tresc{
@@ -132,26 +121,5 @@ img, video {
         }
 
 
-@media (max-width: 768px) {
   
-  *, html, body, div, section, article, main, header, footer, p, span, table {
-    width: 100% !important;
-    max-width: 100% !important;
-    min-width: 0 !important;
-    box-sizing: border-box !important;
-    float: none !important;
-    position: static !important; 
-  }
-
-
-    display: flex !important;
-    flex-direction: column !important;
-    flex-wrap: wrap !important;
-  }
-
- 
-  img, iframe, video {
-    width: 100% !important;
-    height: auto !important;
-  }
 
