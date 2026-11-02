@@ -1,10 +1,22 @@
 
 
         
-
-       * {
+* {
   box-sizing: border-box;
+}
+
+html, body {
   
+  overflow-x: hidden; 
+  width: 100%;
+  max-width: 1200px; 
+  margin: 0 auto;    
+  padding: 0 20px;  
+}
+
+img, video {
+  max-width: 100%;
+  height: auto;
 }
     
    
@@ -119,5 +131,13 @@
 
         }
 
-        
+        @media (max-width: 768px) {
+  .twoj-flex-kontener {
+    flex-direction: column !important;
+  }
+  
+  .twoj-element {
+    width: 100% !important;
+  }
+}
 
