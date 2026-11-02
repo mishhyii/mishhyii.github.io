@@ -131,13 +131,27 @@ img, video {
 
         }
 
-        @media (max-width: 768px) {
-  .twoj-flex-kontener {
-    flex-direction: column !important;
-  }
+
+@media (max-width: 768px) {
   
-  .twoj-element {
+  *, html, body, div, section, article, main, header, footer, p, span, table {
     width: 100% !important;
+    max-width: 100% !important;
+    min-width: 0 !important;
+    box-sizing: border-box !important;
+    float: none !important;
+    position: static !important; 
   }
-}
+
+
+    display: flex !important;
+    flex-direction: column !important;
+    flex-wrap: wrap !important;
+  }
+
+ 
+  img, iframe, video {
+    width: 100% !important;
+    height: auto !important;
+  }
 
