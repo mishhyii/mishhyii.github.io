@@ -4,13 +4,35 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="">
     <title>Porfolio - Zadanie</title>
+
+
+    
+
+
     <style>
 
-     
+        * {
+  box-sizing: border-box;
+}
+
+        .tresc{
+
+            background: url('images/kropki.png');
+            
+            height: 600px;
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+
+            
+    
+        }
 
 
         h1{
-            margin: 100px;
+            margin: 150px;
+            margin-bottom: 100px;
             color: beige;
             font-size: 45px;
         }
@@ -18,15 +40,28 @@
       
         p{
             color: beige;
-            margin: 100px;
+            margin: 150px;
             margin-top: -80px;
+            margin-bottom: 40px;
             font-size: 12px;
+        }
+
+        p2{
+            font-size: 15px;
+            border: solid 2px hotpink;
+            padding-bottom: 10px;
+            padding-top: 10px;
+            padding-left: 15px;
+            padding-right: 15px;
+            color: white;
+            margin: 150px;
+            margin-top: 10px;
+
         }
 
         .linki{
              display: flex;
              gap: 80px;
-             
              justify-content: flex-end;
              color:antiquewhite;
         }
@@ -35,7 +70,7 @@
             
             display: flex;
             padding: 20px 7%;
-            width: 90%;
+            width: 100%;
             justify-content: space-between;
 
         }
@@ -46,27 +81,31 @@
 
 </head>
 
-<body style="background-color: #0c0b1a";>
+<body style="background-color: #050211";>
+
+
+   
 <nav class="navi">
 
 
-    <div class="linki" style="margin-left: -70px; font-size:20px; color:pink;">Victoria Polańska</div>
+    <div class="linki" style="margin-left: -60px; font-size:20px; color:rgb(222, 52, 222); font-family: fantasy  ;">Victoria Polańska</div>
     <div class="linki">
         <span>About</span>
-        <span>Projects</span>
+        <span style="color: violet;">Projects</span>
         <span>Contact</span>
     </div>
 
 
 </nav>
 
+<section class="tresc">
 
 <br><br>
 <h1>Lorem ipsum <br> dolor sit amet, <span style="color:violet;">consectetur</span> <br> adipiscing elit,</h1>
 <p>sed do eiusmod tempor <span style="color:violet;">incididunt</span> ut labore</p>
+<p2> Let's go in touch!</p2>
 
-
-   
+</section>   
 
 
 
