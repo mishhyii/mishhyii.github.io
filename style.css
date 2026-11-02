@@ -1,0 +1,123 @@
+
+
+        
+
+       * {
+  box-sizing: border-box;
+  
+}
+    
+   
+        .tresc{
+
+            background: url('images/kropki.png');
+            
+            height: 600px;
+            background-position: center;
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+            background-size: cover;
+
+            
+    
+        }
+
+        .tresc2{
+
+            
+        }
+
+        h4{
+
+            font-size: 35px;
+            color:aliceblue;
+            margin-top: 60px;
+            margin-left: 100px;
+            margin-bottom: 30px;
+        }
+
+
+        h1{
+            margin: 150px;
+            margin-bottom: 100px;
+            color: beige;
+            font-size: 45px;
+        }
+
+        h3{
+              font-size: 20px;
+            color:aliceblue;
+            margin-top: -450px;
+            margin-left: 750px;
+            margin-bottom: 30px;
+
+        }
+        
+      
+        p{
+            color: beige;
+            margin: 150px;
+            margin-top: -80px;
+            margin-bottom: 40px;
+            font-size: 12px;
+        }
+
+        p2{
+            font-size: 15px;
+            border: solid 2px hotpink;
+            padding-bottom: 10px;
+            padding-top: 10px;
+            padding-left: 15px;
+            padding-right: 15px;
+            color: white;
+            margin: 150px;
+            margin-top: 10px;
+
+        }
+
+        p3{
+            color:aliceblue;
+            margin-right: 100px;
+            margin-top: 20px;
+            margin-left: 100px;
+            margin-bottom: 50px;
+            font-size: 18px;
+
+            
+        }
+        
+        p4{
+            color:aliceblue;
+            margin-right: 100px;
+            margin-top: 40px;
+            margin-left: 100px;
+            font-size: 15px;
+            margin-bottom:100px;
+            
+        }
+
+        p5{
+
+            color:aliceblue;
+            margin-left:750px;
+
+        }
+
+        .linki{
+             display: flex;
+             gap: 80px;
+             justify-content: flex-end;
+             color:antiquewhite;
+        }
+
+        .navi{
+            
+            display: flex;
+            padding: 20px 7%;
+            width: 100%;
+            justify-content: space-between;
+
+        }
+
+        
+
