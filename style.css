@@ -1,5 +1,6 @@
 /* ==========================================
-   STYLE BAZOWE (DLA KOMPUTERA)
+   TWÓJ ORYGINALNY KOD NA KOMPUTER 
+   (W 100% BEZ ZMIAN W WYGLĄDZIE)
    ========================================== */
 * {
   box-sizing: border-box;
@@ -17,332 +18,255 @@ img {
   display: block;
 }
 
-section {
-  position: relative;
-  width: 100%;
-  padding: 80px 10%;
-  box-sizing: border-box;
-  overflow: hidden; /* Zabezpieczenie przed wychodzeniem elementów */
-}
-
-/* Pierwsza sekcja */
 .tresc {
   background: url('images/kropki2.png');
-  min-height: 650px;
+  height: 600px;
   background-position: center;
   background-repeat: no-repeat;
   background-attachment: fixed;
   background-size: cover;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: flex-start;
 }
 
-/* Druga sekcja z Hello Kitty */
 .tresc2 {
   background-color: #330825;
   background-image: linear-gradient(rgba(144, 49, 81, 0.80), rgba(144, 49, 81, 0.80)), url('images/slaczki2.png');
-  min-height: 500px;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
 }
 
-/* Trzecia sekcja z Kuromi */
 .tresc3 {
   background-color: rgb(59, 14, 40);
-  min-height: 600px;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  padding-left: 45%; /* Tworzy bezpieczną przestrzeń na Kuromi po lewej */
 }
 
-/* Czwarta sekcja z trzema pokojami */
 .tresc4 {
   background-color: rgb(144, 49, 81);
   background-image: linear-gradient(rgba(144, 49, 81, 0.5), rgba(144, 49, 81, 0.5)), url('images/slaczki.png');
-  min-height: 600px;
+  height: 500px;
   background-position: center;
   background-repeat: no-repeat;
   background-attachment: scroll;
   background-size: cover;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
 }
 
-/* Piąta sekcja (Stopka / Kontakt) */
 .tresc5 {
   background-color: rgb(92, 27, 49);
-  text-align: center;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  padding: 60px 20px;
 }
 
-/* Typografia i elementy tekstowe dla komputera */
+h4 {
+  font-size: 35px;
+  color: aliceblue;
+  margin-top: 60px;
+  margin-left: 100px;
+  margin-bottom: 30px;
+}
+
+h5 {
+  color: aliceblue;
+  font-size: 30px;
+  margin-left: 90px;
+  margin-right: 100px;
+  margin-top: 60px;
+  text-align: center;
+}
+
 h1 {
+  margin: 150px;
+  margin-bottom: 100px;
   color: beige;
   font-size: 45px;
-  margin: 0 0 25px 0;
-  line-height: 1.3;
+}
+
+h3 {
+  font-size: 20px;
+  color: aliceblue;
+  margin-top: -450px;
+  margin-left: 750px;
+  margin-bottom: 30px;
+}
+
+.h3c {
+  margin-top: 50px;
 }
 
 h2 {
   font-size: 35px;
   color: aliceblue;
-  margin: 0 0 25px 0;
-  line-height: 1.3;
-}
-
-h3 {
-  font-size: 24px;
-  color: aliceblue;
-  margin: 30px 0 10px 0;
-}
-
-h4 {
-  font-size: 40px;
-  color: aliceblue;
-  margin: 0 0 20px 0;
-}
-
-h5 {
-  color: aliceblue;
-  font-size: 32px;
-  margin: 0 0 30px 0;
-  line-height: 1.4;
-  text-align: center;
+  margin-top: 60px;
+  margin-left: 100px;
+  margin-bottom: 30px;
 }
 
 p {
   color: beige;
-  font-size: 22px;
-  margin: 0 0 35px 0;
+  margin: 150px;
+  margin-top: -80px;
+  margin-bottom: 40px;
+  font-size: 20px;
 }
 
 p2, p3, p4, p5, p6, p7 {
-  display: block;
+  display: inline-block;
 }
 
 p2 {
-  font-size: 16px;
+  font-size: 15px;
   border: solid 2px hotpink;
-  padding: 12px 24px;
+  padding: 10px 15px;
   color: white;
-  display: inline-block;
-  margin: 10px 0 0 0;
-  text-decoration: none;
+  margin: 150px;
+  margin-top: 10px;
 }
 
-p3, p4 {
+p3 {
   color: aliceblue;
+  margin-right: 100px;
+  margin-top: 20px;
+  margin-left: 100px;
+  margin-bottom: 50px;
   font-size: 18px;
-  max-width: 55%; /* Zawęża tekst, żeby nie wchodził pod obrazek Hello Kitty */
-  margin: 0 0 20px 0;
-  line-height: 1.5;
+}
+
+p4 {
+  color: aliceblue;
+  margin-right: 100px;
+  margin-top: 40px;
+  margin-left: 100px;
+  font-size: 15px;
+  margin-bottom: 100px;
 }
 
 p5 {
   color: aliceblue;
-  font-size: 18px;
-  margin-bottom: 25px;
-  line-height: 1.5;
+  margin-left: 750px;
 }
 
 p6 {
   font-size: 20px;
   border: solid 2px hotpink;
-  padding: 12px 28px;
+  padding: 10px 15px;
   color: white;
-  display: inline-block;
-  margin: 0 0 35px 0;
-  width: max-content;
+  margin: 100px;
+  margin-top: 10px;
 }
 
 p7 {
   font-size: 20px;
   border: solid 2px hotpink;
-  padding: 12px 35px;
+  padding: 10px 15px;
   color: white;
-  display: inline-block;
-  margin: 10px auto 0 auto;
-}
-
-/* Nawigacja górna */
-.navi {
-  display: flex;
-  padding: 30px 10%;
-  width: 100%;
-  justify-content: space-between;
-  align-items: center;
-  position: absolute;
-  top: 0;
-  left: 0;
-  z-index: 10;
+  margin-left: 650px;
 }
 
 .linki {
-  color: rgb(181, 33, 90);
-  font-size: 24px;
+  display: flex;
+  gap: 80px;
+  justify-content: flex-end;
+  color: antiquewhite;
+  margin-left: -60px;
+  font-size: 20px;
+  color: rgb(113, 17, 62);
   font-family: fantasy;
 }
 
 .linki2 {
   display: flex;
-  gap: 50px;
+  gap: 80px;
+  justify-content: flex-end;
   color: antiquewhite;
-  font-size: 18px;
+  margin-left: 1000px;
 }
 
-/* Neon Efekty */
+.navi {
+  display: flex;
+  padding: 20px 7%;
+  width: 100%;
+  justify-content: space-between;
+}
+
 .neon {
   color: #fff;
   font-weight: bold;
-  text-shadow: 0 0 10px #d4d1d1, 0 0 15px #ff66b2, 0 0 30px #ff66b2, 0 0 60px #ff007f;
+  text-shadow: 0 0 10px #d4d1d1, 0 0 15px #ff66b2, 0 0 30px #ff66b2, 0 0 60px #ff007f, 0 0 100px #ff007f, 0 0 150px;
 }
 
 .neon2 {
   color: #fff;
   font-weight: bold;
-  text-shadow: 0 0 10px #d4d1d1, 0 0 10px #ff66b2, 0 0 20px #ff66b2;
+  text-shadow: 0 0 10px #d4d1d1, 0 0 10px #ff66b2, 0 0 20px #ff66b2, 0 0 40px #ff007f, 0 0 80px #ff007f, 0 0 100px;
 }
 
-/* Pozycjonowanie obrazków bocznych na komputerze */
-.pic1 {
-  position: absolute;
-  right: 10%;
-  top: 50%;
-  transform: translateY(-50%);
-  width: 350px;
-  height: auto;
-}
-
-.pic2 {
-  position: absolute;
-  left: 8%;
-  top: 50%;
-  transform: translateY(-50%);
-  width: 420px;
-  height: auto;
-}
-
-/* Kontener dla siatki trzech pokoi */
-.tresc4-images {
-  display: flex;
-  gap: 25px;
-  justify-content: space-between;
-  width: 100%;
-  margin-top: 20px;
-}
-
-.pic3, .pic4, .pic5 {
-  width: 32%;
-  height: 240px;
-  object-fit: cover;
-  border-radius: 12px;
-}
+.pic1 { margin-left: 1000px; margin-top: -200px; display: flex; align-items: center; justify-content: space-between; width: 350px; height: 350px; }
+.pic2 { margin-left: 40px; width: 600px; height: 600px; display: flex; align-items: center; justify-content: space-between; margin-top: -150px; }
+.pic3 { margin-left: 1050px; margin-top: -250px; display: flex; align-items: center; justify-content: space-between; width: 350px; height: 200px; }
+.pic4 { margin-left: 770px; margin-top: -150px; display: flex; align-items: center; justify-content: space-between; width: 350px; height: 200px; }
+.pic5 { margin-left: 1000px; margin-top: -60px; display: flex; align-items: center; justify-content: space-between; width: 350px; height: 180px; }
 
 
 /* ==========================================
-   WŁAŚCIWA RESPONSYWNOŚĆ (DLA TELEFONÓW)
+   POPRAWKA TYLKO DLA TELEFONÓW (KOMPUTER MA OBRZYDLIWIE SZTYWNE ORYGINALNE STYLE I SĄ NIENARUSZONE)
    ========================================== */
-@media (max-width: 992px) {
+@media (max-width: 768px) {
   
-  section {
-    padding: 60px 25px !important;
-    text-align: center !important;
-    display: flex !important;
-    flex-direction: column !important;
-    align-items: center !important;
-    justify-content: center !important;
-    min-height: auto !important;
+  .tresc, .tresc4 {
     height: auto !important;
+    padding-top: 40px !important;
+    padding-bottom: 40px !important;
   }
 
-  .tresc3 {
-    padding-left: 25px !important; /* Reset bocznego marginesu na Kuromi */
-  }
-
-  .tresc {
-    align-items: center !important;
-  }
-
-  /* Pełny reset układów i wyśrodkowanie treści na smartfonach */
+  /* Zerowanie marginesów z komputera, które rozwalały telefon */
   h1, h2, h3, h4, h5, p, p2, p3, p4, p5, p6, p7, span {
     margin: 0 0 20px 0 !important;
+    padding-left: 15px !important;
+    padding-right: 15px !important;
     width: 100% !important;
     max-width: 100% !important;
     text-align: center !important;
     box-sizing: border-box !important;
     display: block !important;
     position: static !important;
-    transform: none !important;
     word-break: normal !important;
     white-space: normal !important;
   }
 
-  /* Optymalizacja wielkości czcionek na małe ekrany */
-  h1 { font-size: 30px !important; }
+  /* Rozmiary czcionek na telefon */
+  h1 { font-size: 28px !important; }
   h2, h4 { font-size: 24px !important; }
   h3, h5 { font-size: 20px !important; }
   p, p3, p4, p5 { font-size: 16px !important; }
 
-  /* Stylowanie przycisków w wersji mobilnej */
+  /* Elementy przyciskowe na telefonie */
   p2, p6, p7 {
     display: inline-block !important;
     width: auto !important;
-    margin: 10px auto 20px auto !important;
-    padding: 12px 30px !important;
+    margin: 10px auto !important;
+    padding: 10px 20px !important;
   }
 
-  /* Górny pasek nawigacyjny na telefonie */
+  /* Układ menu w pionie */
   .navi {
-    position: static !important;
     flex-direction: column !important;
+    align-items: center !important;
     gap: 15px !important;
-    padding: 25px 20px !important;
-    background-color: #11020d;
   }
-  
   .linki {
-    color: #ffb5da !important; /* Jaśniejszy róż, by nie zlewał się z tłem */
+    color: #ffb5da !important;
     margin: 0 !important;
   }
-
   .linki2 {
     margin: 0 !important;
     gap: 30px !important;
     justify-content: center !important;
-    width: 100% !important;
   }
-  
   .linki2 span {
     display: inline !important;
     width: auto !important;
   }
 
-  /* Przekształcenie trzech pokoi w pionową galerię */
-  .tresc4-images {
-    flex-direction: column !important;
-    width: 100% !important;
-    gap: 20px !important;
-    margin-top: 15px !important;
-  }
-
-  /* Skalowanie wszystkich obrazków (Kitty, Kuromi, Pokoje) */
+  /* Wyśrodkowanie i uelastycznienie wszystkich grafik postaci i pokoi */
   .pic1, .pic2, .pic3, .pic4, .pic5 {
-    position: static !important;
-    transform: none !important;
-    margin: 25px auto !important;
-    width: 100% !important;
-    max-width: 340px !important;
+    margin: 20px auto !important;
+    width: 90% !important;
+    max-width: 320px !important;
     height: auto !important;
     display: block !important;
-    border-radius: 8px !important;
+    position: static !important;
   }
 }
