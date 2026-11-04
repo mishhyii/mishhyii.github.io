@@ -10,10 +10,15 @@ html, body {
   margin: 0;
   padding: 0;
   width: 100%;
+ 
 }
 
 
-
+img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
     
    
         .tresc{
@@ -237,6 +242,44 @@ html, body {
 
 
         
+/* ==========================================
+   KOD DLA TELEFONÓW I TABLETÓW 
+   (Komputer pozostaje w 100% bez zmian)
+   ========================================== */
+@media (max-width: 992px) {
+  
+  /* 1. Resetuje sztywne szerokości do 100% szerokości ekranu */
+  body, html, div, section, header, footer, main, aside, article {
+    width: 100% !important;
+    max-width: 100% !important;
+    min-width: 0 !important;
+    box-sizing: border-box !important;
+    float: none !important;      /* Likwiduje stare układy kolumnowe */
+    position: static !important;   /* Zapobiega ucinaniu przez pozycjonowanie */
+    margin-left: 0 !important;
+    margin-right: 0 !important;
+  }
+
+  /* 2. Zabezpiecza obrazki, wideo i mapy przed wystawaniem za ekran */
+  img, video, iframe, picture, canvas {
+    max-width: 100% !important;
+    height: auto !important;
+    display: block !important;
+  }
+
+  /* 3. Wymusza pionowy układ dla nowoczesnych siatek (Flex/Grid) */
+  *[style*="display: flex"], [style*="display: grid"], 
+  .flex, .grid, .row, .container {
+    display: flex !important;
+    flex-direction: column !important;
+  }
+
+  /* 4. Dodaje bezpieczny margines od krawędzi telefonu, żeby tekst nie dotykał ekranu */
+  body {
+    padding-left: 15px !important;
+    padding-right: 15px !important;
+  }
+}
 
 
   
