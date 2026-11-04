@@ -271,58 +271,70 @@ img {
         
 
 /* ==========================================
-   KOMPLETNA POPRAWKA MOBILNA (Komputer bez zmian)
+   OSTATECZNA POPRAWKA MOBILNA (Komputer bez zmian)
    ========================================== */
 @media (max-width: 992px) {
   
-  /* 1. Reset szerokości kontenerów */
-  body, html, section, div, header, footer, main {
+  /* 1. Reset szerokości kontenerów i usunięcie blokad szerokości tekstów */
+  body, html, section, div, header, footer, main, h1, h2, h3, p, span, a {
     width: 100% !important;
     max-width: 100% !important;
     min-width: 0 !important;
     box-sizing: border-box !important;
     margin-left: 0 !important;
     margin-right: 0 !important;
-    padding-left: 15px !important;  /* Bezpieczne marginesy po bokach */
-    padding-right: 15px !important;
     float: none !important;
+    /* Kluczowe: Resetowanie wymuszonego łamania pojedynczych liter */
+    word-break: normal !important;
+    word-wrap: normal !important;
+    white-space: normal !important;
   }
 
-  /* 2. Zmniejszenie gigantycznych neonowych tekstów nagłówkowych */
+  /* Wyśrodkowanie tekstu i dodanie marginesów na telefonach */
+  section, div {
+    padding-left: 20px !important;
+    padding-right: 20px !important;
+    text-align: center !important;
+  }
+
+  /* 2. Ustawienie idealnego rozmiaru dla nagłówków (koniec z jedną literą w linii) */
   h1, .neon-text, [style*="font-size"] { 
-    font-size: 1.8rem !important;    /* Drastycznie zmniejsza czcionkę, by zmieściła się na ekranie */
-    line-height: 1.3 !important;     /* Zwiększa odstęp między linijkami, żeby litery na siebie nie nachodziły */
-    word-break: break-word !important;
+    font-size: 2rem !important;      /* Odpowiednia wielkość na ekran telefonu */
+    line-height: 1.2 !important;     /* Normalny odstęp między liniami textu */
+    display: block !important;       /* Wymusza zachowanie elementu blokowego */
+    width: 100% !important;          /* Pozwala tekstowi zająć całą szerokość ekranu */
   }
 
-  /* Zwykły tekst (paragrafy) */
+  /* Zwykły tekst poniżej nagłówków */
   p {
-    font-size: 1rem !important;
+    font-size: 1.1rem !important;
     line-height: 1.4 !important;
+    width: 100% !important;
   }
 
-  /* 3. Naprawa menu na górze strony (układ pionowy, żeby linki się nie boksowały) */
+  /* 3. Nawigacja górna na telefonie */
   header, nav, ul, .menu {
     display: flex !important;
-    flex-direction: column !important; /* Układa napisy jeden pod drugim */
+    flex-direction: column !important;
     align-items: center !important;
     text-align: center !important;
-    height: auto !important;           /* Resetuje sztywną wysokość paska menu */
-    position: static !important;       /* Zapobiega nachodzeniu na tekst poniżej */
+    height: auto !important;
+    position: static !important;
   }
 
-  /* Odstępy między linkami w menu */
   nav a, ul li, .menu a {
     padding: 8px 0 !important;
-    font-size: 1.1rem !important;
+    font-size: 1.2rem !important;
   }
 
   /* 4. Skalowanie obrazków */
   img, video {
     max-width: 100% !important;
     height: auto !important;
+    margin: 0 auto !important;
   }
 }
+
 
 
   
