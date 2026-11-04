@@ -271,12 +271,12 @@ img {
         
 
 /* ==========================================
-   OSTATECZNA POPRAWKA MOBILNA (Komputer bez zmian)
+   AGRESYWNY RESET MOBILNY (Komputer bez zmian)
    ========================================== */
 @media (max-width: 992px) {
   
-  /* 1. Reset szerokości kontenerów i usunięcie blokad szerokości tekstów */
-  body, html, section, div, header, footer, main, h1, h2, h3, p, span, a {
+  /* Wymuszenie 100% szerokości i reset marginesów dla KAŻDEGO elementu na stronie */
+  body, html, body *, html * {
     width: 100% !important;
     max-width: 100% !important;
     min-width: 0 !important;
@@ -284,58 +284,45 @@ img {
     margin-left: 0 !important;
     margin-right: 0 !important;
     float: none !important;
-    /* Kluczowe: Resetowanie wymuszonego łamania pojedynczych liter */
+    position: static !important; /* Likwiduje bezwzględne pozycjonowanie na boki */
     word-break: normal !important;
     word-wrap: normal !important;
     white-space: normal !important;
   }
 
-  /* Wyśrodkowanie tekstu i dodanie marginesów na telefonach */
-  section, div {
-    padding-left: 20px !important;
-    padding-right: 20px !important;
+  /* Wyśrodkowanie wszystkich tekstów */
+  h1, h2, h3, p, span, a, div, section {
     text-align: center !important;
+    display: block !important;
   }
 
-  /* 2. Ustawienie idealnego rozmiaru dla nagłówków (koniec z jedną literą w linii) */
-  h1, .neon-text, [style*="font-size"] { 
-    font-size: 2rem !important;      /* Odpowiednia wielkość na ekran telefonu */
-    line-height: 1.2 !important;     /* Normalny odstęp między liniami textu */
-    display: block !important;       /* Wymusza zachowanie elementu blokowego */
-    width: 100% !important;          /* Pozwala tekstowi zająć całą szerokość ekranu */
+  /* Zmniejszenie czcionek, by tekst mieścił się w jednym wierszu */
+  h1, [style*="font-size"] {
+    font-size: 24px !important;
+    line-height: 1.3 !important;
   }
-
-  /* Zwykły tekst poniżej nagłówków */
+  
   p {
-    font-size: 1.1rem !important;
+    font-size: 16px !important;
     line-height: 1.4 !important;
-    width: 100% !important;
   }
 
-  /* 3. Nawigacja górna na telefonie */
-  header, nav, ul, .menu {
+  /* Reset układu menu nawigacyjnego na górze */
+  header, nav, ul, li {
     display: flex !important;
     flex-direction: column !important;
     align-items: center !important;
-    text-align: center !important;
     height: auto !important;
-    position: static !important;
   }
 
-  nav a, ul li, .menu a {
-    padding: 8px 0 !important;
-    font-size: 1.2rem !important;
-  }
-
-  /* 4. Skalowanie obrazków */
-  img, video {
-    max-width: 100% !important;
+  /* Automatyczne skalowanie grafik (Hello Kitty, Kuromi itp.) */
+  img {
+    max-width: 90% !important;
     height: auto !important;
-    margin: 0 auto !important;
+    margin: 10px auto !important;
+    display: block !important;
   }
 }
-
-
 
   
 
