@@ -18,7 +18,7 @@ html, body {
    
         .tresc{
 
-            background: url('images/kropki.png');
+            background: url('images/kropki2.png');
             
             height: 600px;
             background-position: center;
@@ -30,9 +30,15 @@ html, body {
     
         }
 
+        .tresc2{
+
+            background-color: #330825;
+            background-image: linear-gradient(rgba(144, 49, 81, 0.80), rgba(144, 49, 81, 0.80)), url('images/slaczki2.png');
+        }
+
         .tresc3{
                  
-            background-color: rgb(9, 12, 23);
+            background-color: rgb(59, 14, 40);
             
         }
 
@@ -48,6 +54,12 @@ html, body {
             background-size: cover;
         }
 
+        .tresc5{
+
+            
+            background-color: rgb(92, 27, 49);
+        }
+
         h4{
 
             font-size: 35px;
@@ -57,6 +69,14 @@ html, body {
             margin-bottom: 30px;
         }
 
+        h5{
+            color:aliceblue;
+            font-size: 30px;
+            margin-left: 90px;
+            margin-right: 100px;
+            margin-top: 60px;
+            text-align: center;
+        }
 
         h1{
             margin: 150px;
@@ -83,6 +103,7 @@ html, body {
             margin-bottom: 30px;
 
         }
+
         
       
         p{
@@ -134,7 +155,8 @@ html, body {
 
         }
 
-        p6{font-size: 20px;
+        p6{
+            font-size: 20px;
             border: solid 2px hotpink;
             padding-bottom: 10px;
             padding-top: 10px;
@@ -142,7 +164,24 @@ html, body {
             padding-right: 15px;
             color: white;
             margin: 100px;
-            margin-top: 10px;}
+            margin-top: 10px;
+        }
+
+        p7{
+
+            font-size:20px;
+            border: solid 2px hotpink;
+            padding-bottom: 10px;
+            padding-top: 10px;
+            padding-left:15px;
+            padding-right: 15px;
+            color: white;
+            margin-left: 650px;
+            
+        }
+
+       
+   
 
         .linki{
              display: flex;
@@ -176,6 +215,25 @@ html, body {
     0 0 100px #ff007f,  
     0 0 150px
 }
+
+
+.neon2{
+
+
+            
+  color: #fff; 
+  font-weight: bold;
+  
+  
+  text-shadow: 
+   0 0 10px #d4d1d1, 
+    0 0 10px #ff66b2, 
+    0 0 20px #ff66b2, 
+    0 0 40px #ff007f,   
+    0 0 80px #ff007f,  
+    0 0 100px
+}
+
 
 
         
